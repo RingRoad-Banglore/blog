@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+
+    {% if site.google_analytics %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+    <meta charset="UTF-8">
+
+    {% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+
+<body>
+
+
+    <header class="page-header" role="banner">
+        <h1 class="project-name">
+            {{ page.title | default: site.title | default: site.github.repository_name }}
+        </h1>
+    </header>
+
+
+    <header class="page-header" role="banner" style="position: sticky; top: 0;">
+        <div>
+            <a href="/" style="color: black; ">Go to Home</a>
+        </div>
+        <div style="color: black;">
+            <script async src="https://cse.google.com/cse.js?cx=015793354231131675394:cr6cjp1gfkp"></script>
+            <div class="gcse-search"></div>
+        </div>
+
+    </header>
+
+    <main id="content" class="main-content" role="main">
+        {{ content }}
+
+        <footer class="site-footer">
+            Thanks to : <a href="http://www.ringroad.in">RingRoad  &#129322</a> ,
+             <a href="https://onlinejudge.org/">Online Judge  &#128540</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="mailto:ringroaddotin@gmail.com?Subject=ISSUE_url_{{page.url}}" target="_top">Report Issues  &#129324</a>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -1,1 +1,22 @@
+theme: jekyll-theme-cayman
+title: Programming Problems
+description: I post various problems from uva online ..
+author: Naveen V
+paginate: 5
+show_downloads: false
+logo: "logo.png"
+google_analytics: UA-161608422-1
+auto: true
+permalink: pretty
+pagination:
+    enabled: true
+    debug: false
+    collection: 'posts'
+    per_page: 5
+    permalink: '/page/:num/'
+    title: ':title - page :num'
+    limit: 0
     
+plugins:
+    - jekyll-seo-tag
+    - jekyll-paginate

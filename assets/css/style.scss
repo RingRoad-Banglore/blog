@@ -1,0 +1,22 @@
+---
+---
+@import "{{ site.theme }}";
+
+.page-header {
+    padding: 0px;
+}
+
+.box{
+    padding: 3px;
+    margin: 3px;
+    transition: 1s ease;
+}
+.box:hover{
+    padding: 3px;
+    margin: 3px;
+    cursor: pointer;
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+    transition: 1s ease;
+}
