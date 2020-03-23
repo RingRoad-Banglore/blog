@@ -8,7 +8,7 @@ logo: "logo.png"
 google_analytics: UA-161608422-1
 auto: true
 permalink: pretty
-repository: blog.ringroad.in
+repository: RingRoad-Banglore/blog
 pagination:
     enabled: true
     debug: false
