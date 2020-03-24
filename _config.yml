@@ -2,7 +2,7 @@ theme: jekyll-theme-cayman
 title: RingRoad Blog
 description: Diverse topics related post are pubilshed and can be accessed via simple interface. Ranging from computer science, technology, current affairs, etc..
 author: Naveen V
-paginate: 5
+paginate: 10
 show_downloads: false
 logo: "logo.png"
 google_analytics: UA-161608422-1
@@ -13,7 +13,7 @@ pagination:
     enabled: true
     debug: false
     collection: 'posts'
-    per_page: 5
+    per_page: 10
     permalink: '/page/:num/'
     title: ':title - page :num'
     limit: 0
